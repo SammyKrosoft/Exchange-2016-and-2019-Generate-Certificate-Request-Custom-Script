@@ -75,7 +75,7 @@ Import-ExchangeCertificate -PrivateKeyExportable "True" -FileName "\\localhost\c
 
 Then you enable the Exchange services on that new certificate so that it will be used with clients to establish secure SSL connection, on the EAC you need to open the new certificate properties and access the "Services" menu:
 
-![image](https://user-images.githubusercontent.com/33433229/126806829-aa0c4080-0060-42c9-9a7f-236bb96a1cf5.png)
+![image](https://user-images.githubusercontent.com/33433229/126808165-ae691a1d-da88-49d7-a75e-f3d2549ef3fc.png)
 
 That will trigger the following Powershell Command line in the background (you will have a different certificate Identity, based on the server fqdn and the certificate thumbprint):
 
