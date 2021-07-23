@@ -57,7 +57,15 @@ autodiscover.canadasam.ca
 
 ## Complete request (EAC) or Import Certificate (PowerShell)
 
-Once the certificate is received from the CA, the "Complete" certificate request menu in EAC/EMC/ECP for a pending certificate request will ask you for a file UNC path (if the machine is local you can use ```\\localhost\c$\certificatefolderlocation\file.p7b```), and it will call the following command:
+Once the certificate is received from the CA, you will notice a "Complete" certificate request menu in EAC/EMC/ECP for a pending certificate request :
+
+![image](https://user-images.githubusercontent.com/33433229/126807911-fbea32c2-dbee-4909-b8e9-16e39db684a7.png)
+
+when you click on it, it will ask you for a file UNC path (if the machine is local you can use ```\\localhost\c$\certificatefolderlocation\file.p7b```):
+
+![image](https://user-images.githubusercontent.com/33433229/126808007-bbadbcf7-624c-4880-a9e6-b047c7638501.png)
+
+and under the hood, that menu will trigger the following command:
 
 ```powershell
 Import-ExchangeCertificate -PrivateKeyExportable "True" -FileName "\\localhost\c$\certificates\Cert_File_Received_From_CA.p7b" -Server "Server.fqdn" 
