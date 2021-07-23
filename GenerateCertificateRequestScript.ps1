@@ -8,7 +8,7 @@
 # Exchange Management Shell session
 [bool]$ExecuteCommand = $false
 
-$CertFriendlyName = "E2016 Certificate CanadaSam Exp. Aug. 2021"
+$CertFriendlyName = "E2016 Certificate CanadaSam"
 
 $RequestFilePath = "C:\temp\E2016Cert_$(Get-Date -Format dddMMyyyy_HHmmss).req"
 
