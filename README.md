@@ -6,7 +6,9 @@ This script is simply a wrapper around the ```New-ExchangeCertificate``` cmdlet,
 New-ExchangeCertificate -FriendlyName $CertFriendlyName -GenerateRequest -KeySize 2048 -SubjectName $SubjectName -DomainName $DomainNames -PrivateKeyExportable $true -RequestFile $RequestFilePath -ErrorAction Stop
 ```
 
-This script generates the New-ExchangeCertificate command line with correct subject format, as well as domain names (SANs). You can choose to execute the command from the script ($ExecuteCommand = $true), or just dump the New-ExchangeCertificate command line for manual run (copy/paste) and/or documentation ($ExecuteCommand = $false).
+This script generates the New-ExchangeCertificate command line with correct subject format, as well as domain names (SANs). You can choose to execute the command from the script ($ExecuteCommand = $true), or just paste the New-ExchangeCertificate command line for manual run (copy/paste) and/or documentation ($ExecuteCommand = $false).
+
+> **NOTE**: the script puts the command line in the clipboard - just use CTRL + V to paste it anywhere after running the script
 
 # Usage
 
