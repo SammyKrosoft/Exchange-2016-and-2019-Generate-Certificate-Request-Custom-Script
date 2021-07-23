@@ -60,7 +60,7 @@ autodiscover.canadasam.ca
 Once the certificate is received from the CA, the "Complete" certificate request menu in EAC/EMC/ECP for a pending certificate request will ask you for a file UNC path (if the machine is local you can use ```\\localhost\c$\certificatefolderlocation\file.p7b```), and it will call the following command:
 
 ```powershell
-Import-ExchangeCertificate -PrivateKeyExportable "True" -FileName "\\localhost\c$\certificates\mail_canadasam_ca.p7b" -Server "E2016-01.CanadaDrey.ca" 
+Import-ExchangeCertificate -PrivateKeyExportable "True" -FileName "\\localhost\c$\certificates\Cert_File_Received_From_CA.p7b" -Server "Server.fqdn" 
 ```
 
 ## Enable Exchange services (SMTP, IIS, POP, IMAP) on that cert
