@@ -25,17 +25,27 @@ Set the values at the beginning of the script:
 # Exchange Management Shell session
 [bool]$ExecuteCommand = $false
 
-$CertFriendlyName = "E2016 Certificate"
+$CertFriendlyName = "E2016 Certificate CanadaSam"
 
 $RequestFilePath = "C:\temp\E2016Cert_$(Get-Date -Format dddMMyyyy_HHmmss).req"
 
+# Populate the below accordingly
+# C=<CountryOrRegion>,S=<StateOrProvince>,L=<LocalityOrCity>,O=<Organization>,OU=<Department>]
+
+# Country or Region
 $SC = "ca"
+# State or Province
 $SS = "Ontario"
+# Locality or City
 $SL = "Ottawa"
+# Organization
 $SO = "Canada Sam"
+#Department
 $SOU = "IT Department"
+# Subject FQDN (must be repeated in the SAN aka HereString Domain Names
 $SCN = "mail.canadasam.ca"
 
+# Put all your domains in this string (1 per line, no indent)
 $HereStringDomainNames = @"
 mail.canadasam.ca
 autodiscover.canadasam.ca
