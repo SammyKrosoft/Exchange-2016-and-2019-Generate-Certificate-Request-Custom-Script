@@ -73,6 +73,8 @@ $Command = "New-ExchangeCertificate -FriendlyName """ + $CertFriendlyName + """ 
 # Printing the command to execute (for info or documentation)
 ###################################################################
 write-host $command -ForegroundColor green
+$command | clip.exe
+write-host "`n`n`nCommand placed in the Clipboard, CTRL+V to paste it anywhere !" -backgroundColor Blue -ForeGroundcolor Yellow
 
 ###################################################################
 # Executing the command if we set the variable $ExecuteCommand 
