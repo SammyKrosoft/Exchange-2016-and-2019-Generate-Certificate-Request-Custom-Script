@@ -34,6 +34,8 @@ autodiscover.canadasam.ca
 "@
 ```
 
+... and then just run the script.
+
 > if you want to run the new cert request, change ```[bool]$ExecuteCommand = $false``` to ```[bool]$ExecuteCommand = $true```
 
 > if not, the script will just print the New-ExhcangeCertificate powershell command:
