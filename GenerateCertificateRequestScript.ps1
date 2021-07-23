@@ -10,7 +10,7 @@
 
 $CertFriendlyName = "E2016 Certificate CanadaSam Exp. Aug. 2021"
 
-$RequestFilePath = "C:\temp\E2016Cert21JUL2021_$(Get-Date -Format dddMMyyyy_HHmmss).req"
+$RequestFilePath = "C:\temp\E2016Cert_$(Get-Date -Format dddMMyyyy_HHmmss).req"
 
 $SC = "ca"
 $SS = "Ontario"
