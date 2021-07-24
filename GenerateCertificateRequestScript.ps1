@@ -13,7 +13,7 @@ $CertFriendlyName = "E2016 Certificate CanadaSam"
 $RequestFilePath = "C:\temp\E2016Cert_$(Get-Date -Format dddMMyyyy_HHmmss).req"
 
 # Populate the below accordingly
-# C=<CountryOrRegion>,S=<StateOrProvince>,L=<LocalityOrCity>,O=<Organization>,OU=<Department>]
+# C=<CountryOrRegion>,S=<StateOrProvince>,L=<LocalityOrCity>,O=<Organization>,OU=<Department>,CN=<HostNameOrFQDN>]
 
 # Country or Region
 $SC = "ca"
