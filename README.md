@@ -86,8 +86,8 @@ Then you enable the Exchange services on that new certificate so that it will be
 
 ![image](https://user-images.githubusercontent.com/33433229/126808165-ae691a1d-da88-49d7-a75e-f3d2549ef3fc.png)
 
-That will trigger the following Powershell Command line in the background (you will have a different certificate Identity, based on the server fqdn and the certificate thumbprint):
+That will trigger the following Powershell Command line in the background (you will have a different certificate thumbprint):
 
 ```powershell
-Enable-ExchangeCertificate -Services "IMAP, POP, IIS, SMTP" -Identity "Myserver.fqdn\17BE570EFE20836063EE1771C0D18482FBB03846" -Force "True" 
+Enable-ExchangeCertificate -Services "IMAP, POP, IIS, SMTP" -Thumbpring 17BE570EFE20836063EE1771C0D18482FBB03846 -Force "True" 
 ```
