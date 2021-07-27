@@ -54,14 +54,13 @@ autodiscover.canadasam.ca
 
 ... and then just run the script.
 
+-> if you leave ```[bool]$ExecuteCommand = $false```, the script will just print the ```New-ExchangeCertificate``` powershell command with all the values you specified on the customization part:
+
+![image](https://user-images.githubusercontent.com/33433229/126735478-916b9b6d-868b-427a-bd44-d00af802fe3d.png)
+
 -> if you want to run the new cert request, change ```[bool]$ExecuteCommand = $false``` to ```[bool]$ExecuteCommand = $true```
 
 ![image](https://user-images.githubusercontent.com/33433229/126735538-c9704310-5f48-45a4-8fdf-908c482286ff.png)
-
-
--> if you leave ```[bool]$ExecuteCommand = $false```, the script will just print the ```New-ExchangeCertificate``` powershell command:
-
-![image](https://user-images.githubusercontent.com/33433229/126735478-916b9b6d-868b-427a-bd44-d00af802fe3d.png)
 
 # After - Import Certificate, enable Exchange services (SMTP, IIS, ...)
 
